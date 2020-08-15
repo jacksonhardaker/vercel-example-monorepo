@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pack": "./prepush.sh"
+    "pack": "./prepush.sh",
+    "start:thing": "npx next dev thing-web",
+    "build:thing": "npx next build thing-web",
+    "start:thang": "npx next dev thang-web",
+    "build:thang": "npx next build thang-web"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +17,10 @@
   "devDependencies": {
     "lerna": "^3.22.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "next": "^9.5.2",
+    "next-transpile-modules": "^4.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
 }

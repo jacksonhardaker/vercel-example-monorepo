@@ -1,2 +1,1 @@
-const withTM = require('next-transpile-modules')(['@dummy/date', '@dummy/random']);
-module.exports = withTM();
+module.exports = require("../next.config")
