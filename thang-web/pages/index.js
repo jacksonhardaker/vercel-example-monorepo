@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { whatsTheDateRightNow } from '../../packages/date'
-import { haveARandomNumber } from '../../packages/random'
+import { whatsTheDateRightNow } from '@dummy/date'
+import { haveARandomNumber } from '@dummy/random'
 
 export default function Home() {
   const getDate = () => alert(whatsTheDateRightNow())
