@@ -11,7 +11,7 @@
     "build:thing": "npx lerna run build:thing",
     "dev:thang": "npx lerna run dev:thang",
     "start:thang": "npx lerna run start:thang",
-    "build:thang": "npx lerna run build:taing"
+    "build:thang": "npx lerna run build:thang"
   },
   "keywords": [],
   "author": "",
