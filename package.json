@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "./prepush.sh"
   },
   "keywords": [],
   "author": "",
@@ -12,7 +13,5 @@
   "devDependencies": {
     "lerna": "^3.22.1"
   },
-  "dependencies": {
-    "next-transpile-modules": "^4.1.0"
-  }
+  "dependencies": {}
 }

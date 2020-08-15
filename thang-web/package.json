@@ -8,7 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "@dummy/date": "file:./dummy-date-1.0.0.tgz",
+    "@dummy/random": "file:./dummy-random-1.0.0.tgz",
     "next": "9.5.2",
+    "next-transpile-modules": "^4.1.0",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   }
