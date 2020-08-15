@@ -3,13 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev:thing": "next dev",
+    "start:thing": "next start",
+    "build:thing": "next build"
   },
   "dependencies": {
-    "@dummy/date": "file:./dummy-date-1.0.0.tgz",
-    "@dummy/random": "file:./dummy-random-1.0.0.tgz",
     "next": "9.5.2",
     "next-transpile-modules": "^4.1.0",
     "react": "16.13.1",

@@ -6,10 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "pack": "./prepush.sh",
-    "start:thing": "npx next dev thing-web",
-    "build:thing": "npx next build thing-web",
-    "start:thang": "npx next dev thang-web",
-    "build:thang": "npx next build thang-web"
+    "dev:thing": "npx lerna run dev:thing",
+    "start:thing": "npx lerna run start:thing",
+    "build:thing": "npx lerna run build:thing",
+    "dev:thang": "npx lerna run dev:thang",
+    "start:thang": "npx lerna run start:thang",
+    "build:thang": "npx lerna run build:taing"
   },
   "keywords": [],
   "author": "",
