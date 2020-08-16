@@ -1,6 +1,14 @@
 const isDev = process.env.NODE_ENV === "development";
 
 module.exports = {
+  stories: [
+    "../stories/**/*.stories.mdx",
+    "../stories/**/*.stories.@(js|jsx|ts|tsx)"
+  ],
+  addons: [
+    "@storybook/addon-links",
+    "@storybook/addon-essentials"
+  ],
   refs: {
     "design-system": { 
       title: "Design System", 
