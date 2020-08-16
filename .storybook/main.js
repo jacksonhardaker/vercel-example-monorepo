@@ -1,12 +1,14 @@
+const isDev = process.env.NODE_ENV === "development";
+
 module.exports = {
   refs: {
     "design-system": { 
       title: "Design System", 
-      url: "http://localhost:7008"
+      url: isDev ? "http://localhost:7008" : "https://dummy-date-storybook.vercel.app/",
     },
     "component-library": { 
       title: "Component Library", 
-      url: "http://localhost:7007"
+      url: isDev ? "http://localhost:7007" : "https://dummy-random-storybook.vercel.app/",
     }
    }
 }
