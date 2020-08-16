@@ -4,11 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook:random": "start-storybook -p 7007 --quiet --ci",
+    "build-storybook:random": "build-storybook"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "random": "^2.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@storybook/addon-actions": "^6.0.10",
+    "@storybook/addon-essentials": "^6.0.10",
+    "@storybook/addon-links": "^6.0.10",
+    "@storybook/react": "^6.0.10",
+    "babel-loader": "^8.1.0",
+    "react-is": "^16.13.1"
   }
 }
