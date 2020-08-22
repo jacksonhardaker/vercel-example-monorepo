@@ -2,10 +2,17 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { whatsTheDateRightNow } from '../../packages/date'
 import { haveARandomNumber } from '../../packages/random'
+import { TypescriptComponent } from '../components/TypescriptComponent'
+import { useMemo } from 'react'
 
 export default function Home() {
   const getDate = () => alert(whatsTheDateRightNow())
   const getRandom = () => alert(haveARandomNumber())
+
+  const complextObj = useMemo(() => ({
+    date: whatsTheDateRightNow(),
+    random: haveARandomNumber(),
+  }), [])
 
   return (
     <div className={styles.container}>
@@ -23,6 +30,8 @@ export default function Home() {
           <button onClick={getDate}>What's the date?</button>
           <button onClick={getRandom}>Can I get a random?</button>
         </p>
+
+        <TypescriptComponent myString="A String" myInt={33} myComplexObj={complextObj} />
       </main>
 
       <footer className={styles.footer}>
