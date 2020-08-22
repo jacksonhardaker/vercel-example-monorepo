@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css'
 import { whatsTheDateRightNow } from '../../packages/date'
 import { haveARandomNumber } from '../../packages/random'
 import { TypescriptComponent } from '../components/TypescriptComponent'
+import { PropTypesComponent } from '../components/PropTypesComponent'
 import { useMemo } from 'react'
 
 export default function Home() {
@@ -32,6 +33,7 @@ export default function Home() {
         </p>
 
         <TypescriptComponent myString="A String" myInt={33} myComplexObj={complextObj} />
+        <PropTypesComponent myString="A String" myInt={33} myComplexObj={complextObj} />
       </main>
 
       <footer className={styles.footer}>
